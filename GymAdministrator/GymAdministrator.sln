@@ -5,9 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{A82C347C-15EE-463A-BB62-646888C9C668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{B6230D92-B368-4A30-B428-C0988090C8D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{B6230D92-B368-4A30-B428-C0988090C8D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{67C3D531-31CD-4F98-AA94-CC70FD6EED7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{67C3D531-31CD-4F98-AA94-CC70FD6EED7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{2BC17DCF-2356-474F-A6C1-E2A9AF53F80F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{67C3D531-31CD-4F98-AA94-CC70FD6EED7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C3D531-31CD-4F98-AA94-CC70FD6EED7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C3D531-31CD-4F98-AA94-CC70FD6EED7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC17DCF-2356-474F-A6C1-E2A9AF53F80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC17DCF-2356-474F-A6C1-E2A9AF53F80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC17DCF-2356-474F-A6C1-E2A9AF53F80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC17DCF-2356-474F-A6C1-E2A9AF53F80F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

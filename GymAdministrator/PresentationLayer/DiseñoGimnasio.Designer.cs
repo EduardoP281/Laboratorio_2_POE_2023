@@ -28,73 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiseñoGimnasio));
             gymAdminTab = new TabControl();
             membersTab = new TabPage();
-            membershipTab = new TabPage();
-            sesionTab = new TabPage();
-            asistenceTab = new TabPage();
             membersBox = new GroupBox();
-            deleteButtom = new Button();
-            editButton = new Button();
-            deleteButton = new Button();
-            duiLabel = new Label();
-            nameLabel = new Label();
-            lastNameLabel = new Label();
-            numberPhoneLabel = new Label();
-            emailLabel = new Label();
-            duiTextBox = new TextBox();
-            nameTextBox = new TextBox();
-            textBox3 = new TextBox();
-            numberPhoneTextBox = new TextBox();
             emailTextBox = new TextBox();
-            registerMembershipGroupBox = new GroupBox();
+            numberPhoneTextBox = new TextBox();
+            textBox3 = new TextBox();
+            nameTextBox = new TextBox();
+            duiTextBox = new TextBox();
+            emailLabel = new Label();
+            numberPhoneLabel = new Label();
+            lastNameLabel = new Label();
+            nameLabel = new Label();
+            duiLabel = new Label();
+            deleteButton = new Button();
+            editButton = new Button();
+            deleteButtom = new Button();
+            membershipTab = new TabPage();
             membershipManagerGroupBox = new GroupBox();
-            typeMembershipLabel = new Label();
-            priceMembershipLabel = new Label();
-            duiMemberLabel = new Label();
-            membershipStateLabel = new Label();
-            duiMemberTextBox = new TextBox();
-            typeMembershipComboBox = new ComboBox();
-            priceMembershipComboBox = new ComboBox();
-            membershipStateComboBox = new ComboBox();
-            addMemberButton = new Button();
             membershipStateButton = new Button();
-            classGroupBox = new GroupBox();
+            membershipStateComboBox = new ComboBox();
+            duiMemberTextBox = new TextBox();
+            membershipStateLabel = new Label();
+            duiMemberLabel = new Label();
+            registerMembershipGroupBox = new GroupBox();
+            addMemberButton = new Button();
+            priceMembershipComboBox = new ComboBox();
+            typeMembershipComboBox = new ComboBox();
+            priceMembershipLabel = new Label();
+            typeMembershipLabel = new Label();
+            sesionTab = new TabPage();
             instructorGroupBox = new GroupBox();
-            excerciseTypeLabel = new Label();
-            roomLabel = new Label();
-            instructorNameLabel = new Label();
-            instructorLastNameLabel = new Label();
-            instructorPhoneNumberLabel = new Label();
-            instructorEmailLabel = new Label();
-            instructorPaymentLabel = new Label();
-            instructorStateLabel = new Label();
-            typeExcerciseComboBox = new ComboBox();
-            roomComboBox = new ComboBox();
-            instructorStateComboBox = new ComboBox();
-            instructorNameTextBox = new TextBox();
-            instructorLastNameTextBox = new TextBox();
-            instructorPhoneNumberTextBox = new TextBox();
-            instructorEmailTextBox = new TextBox();
-            instructorPaymentTextBox = new TextBox();
-            addTypeExcerciseButton = new Button();
             addInstructorButton = new Button();
+            instructorPaymentTextBox = new TextBox();
+            instructorEmailTextBox = new TextBox();
+            instructorPhoneNumberTextBox = new TextBox();
+            instructorLastNameTextBox = new TextBox();
+            instructorNameTextBox = new TextBox();
+            instructorStateComboBox = new ComboBox();
+            instructorStateLabel = new Label();
+            instructorPaymentLabel = new Label();
+            instructorEmailLabel = new Label();
+            instructorPhoneNumberLabel = new Label();
+            instructorLastNameLabel = new Label();
+            instructorNameLabel = new Label();
+            classGroupBox = new GroupBox();
+            addTypeExcerciseButton = new Button();
+            roomComboBox = new ComboBox();
+            typeExcerciseComboBox = new ComboBox();
+            roomLabel = new Label();
+            excerciseTypeLabel = new Label();
+            asistenceTab = new TabPage();
             assistenceGroupBox = new GroupBox();
-            assistenceDateLabel = new Label();
-            assistenceStateLabel = new Label();
-            assistenceDateTimePicker = new DateTimePicker();
-            assistenceStateCheckedListBox = new CheckedListBox();
             addAssistenceButton = new Button();
+            assistenceStateCheckedListBox = new CheckedListBox();
+            assistenceDateTimePicker = new DateTimePicker();
+            assistenceStateLabel = new Label();
+            assistenceDateLabel = new Label();
             gymAdminTab.SuspendLayout();
             membersTab.SuspendLayout();
-            membershipTab.SuspendLayout();
-            sesionTab.SuspendLayout();
-            asistenceTab.SuspendLayout();
             membersBox.SuspendLayout();
-            registerMembershipGroupBox.SuspendLayout();
+            membershipTab.SuspendLayout();
             membershipManagerGroupBox.SuspendLayout();
-            classGroupBox.SuspendLayout();
+            registerMembershipGroupBox.SuspendLayout();
+            sesionTab.SuspendLayout();
             instructorGroupBox.SuspendLayout();
+            classGroupBox.SuspendLayout();
+            asistenceTab.SuspendLayout();
             assistenceGroupBox.SuspendLayout();
             SuspendLayout();
             // 
@@ -122,42 +123,6 @@
             membersTab.Text = "Miembros";
             membersTab.UseVisualStyleBackColor = true;
             // 
-            // membershipTab
-            // 
-            membershipTab.Controls.Add(membershipManagerGroupBox);
-            membershipTab.Controls.Add(registerMembershipGroupBox);
-            membershipTab.Location = new Point(4, 28);
-            membershipTab.Name = "membershipTab";
-            membershipTab.Padding = new Padding(3);
-            membershipTab.Size = new Size(568, 515);
-            membershipTab.TabIndex = 1;
-            membershipTab.Text = "Membresias";
-            membershipTab.UseVisualStyleBackColor = true;
-            // 
-            // sesionTab
-            // 
-            sesionTab.Controls.Add(instructorGroupBox);
-            sesionTab.Controls.Add(classGroupBox);
-            sesionTab.Location = new Point(4, 28);
-            sesionTab.Name = "sesionTab";
-            sesionTab.Padding = new Padding(3);
-            sesionTab.Size = new Size(568, 515);
-            sesionTab.TabIndex = 2;
-            sesionTab.Text = "Sesión";
-            sesionTab.UseVisualStyleBackColor = true;
-            // 
-            // asistenceTab
-            // 
-            asistenceTab.Controls.Add(assistenceGroupBox);
-            asistenceTab.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            asistenceTab.Location = new Point(4, 28);
-            asistenceTab.Name = "asistenceTab";
-            asistenceTab.Padding = new Padding(3);
-            asistenceTab.Size = new Size(568, 515);
-            asistenceTab.TabIndex = 3;
-            asistenceTab.Text = "Asistencia";
-            asistenceTab.UseVisualStyleBackColor = true;
-            // 
             // membersBox
             // 
             membersBox.BackColor = SystemColors.ControlLightLight;
@@ -181,68 +146,40 @@
             membersBox.TabStop = false;
             membersBox.Text = "REGISTRO DE MIEMBROS";
             // 
-            // deleteButtom
+            // emailTextBox
             // 
-            deleteButtom.Location = new Point(94, 388);
-            deleteButtom.Name = "deleteButtom";
-            deleteButtom.Size = new Size(82, 31);
-            deleteButtom.TabIndex = 0;
-            deleteButtom.Text = "Eliminar";
-            deleteButtom.UseVisualStyleBackColor = true;
+            emailTextBox.Location = new Point(160, 317);
+            emailTextBox.Name = "emailTextBox";
+            emailTextBox.Size = new Size(185, 26);
+            emailTextBox.TabIndex = 12;
             // 
-            // editButton
+            // numberPhoneTextBox
             // 
-            editButton.Location = new Point(217, 388);
-            editButton.Name = "editButton";
-            editButton.Size = new Size(87, 31);
-            editButton.TabIndex = 1;
-            editButton.Text = "Editar";
-            editButton.UseVisualStyleBackColor = true;
+            numberPhoneTextBox.Location = new Point(160, 250);
+            numberPhoneTextBox.Name = "numberPhoneTextBox";
+            numberPhoneTextBox.Size = new Size(185, 26);
+            numberPhoneTextBox.TabIndex = 11;
             // 
-            // deleteButton
+            // textBox3
             // 
-            deleteButton.Location = new Point(335, 388);
-            deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(87, 31);
-            deleteButton.TabIndex = 2;
-            deleteButton.Text = "Eliminar";
-            deleteButton.UseVisualStyleBackColor = true;
+            textBox3.Location = new Point(160, 183);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(185, 26);
+            textBox3.TabIndex = 10;
             // 
-            // duiLabel
+            // nameTextBox
             // 
-            duiLabel.AutoSize = true;
-            duiLabel.Location = new Point(160, 34);
-            duiLabel.Name = "duiLabel";
-            duiLabel.Size = new Size(33, 19);
-            duiLabel.TabIndex = 3;
-            duiLabel.Text = "DUI";
+            nameTextBox.Location = new Point(160, 119);
+            nameTextBox.Name = "nameTextBox";
+            nameTextBox.Size = new Size(185, 26);
+            nameTextBox.TabIndex = 9;
             // 
-            // nameLabel
+            // duiTextBox
             // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new Point(160, 97);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(65, 19);
-            nameLabel.TabIndex = 4;
-            nameLabel.Text = "Nombre";
-            // 
-            // lastNameLabel
-            // 
-            lastNameLabel.AutoSize = true;
-            lastNameLabel.Location = new Point(160, 161);
-            lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new Size(66, 19);
-            lastNameLabel.TabIndex = 5;
-            lastNameLabel.Text = "Apellido";
-            // 
-            // numberPhoneLabel
-            // 
-            numberPhoneLabel.AutoSize = true;
-            numberPhoneLabel.Location = new Point(160, 228);
-            numberPhoneLabel.Name = "numberPhoneLabel";
-            numberPhoneLabel.Size = new Size(67, 19);
-            numberPhoneLabel.TabIndex = 6;
-            numberPhoneLabel.Text = "Telefono";
+            duiTextBox.Location = new Point(160, 56);
+            duiTextBox.Name = "duiTextBox";
+            duiTextBox.Size = new Size(185, 26);
+            duiTextBox.TabIndex = 8;
             // 
             // emailLabel
             // 
@@ -253,54 +190,80 @@
             emailLabel.TabIndex = 7;
             emailLabel.Text = "Correo";
             // 
-            // duiTextBox
+            // numberPhoneLabel
             // 
-            duiTextBox.Location = new Point(160, 56);
-            duiTextBox.Name = "duiTextBox";
-            duiTextBox.Size = new Size(185, 26);
-            duiTextBox.TabIndex = 8;
+            numberPhoneLabel.AutoSize = true;
+            numberPhoneLabel.Location = new Point(160, 228);
+            numberPhoneLabel.Name = "numberPhoneLabel";
+            numberPhoneLabel.Size = new Size(67, 19);
+            numberPhoneLabel.TabIndex = 6;
+            numberPhoneLabel.Text = "Telefono";
             // 
-            // nameTextBox
+            // lastNameLabel
             // 
-            nameTextBox.Location = new Point(160, 119);
-            nameTextBox.Name = "nameTextBox";
-            nameTextBox.Size = new Size(185, 26);
-            nameTextBox.TabIndex = 9;
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Location = new Point(160, 161);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new Size(66, 19);
+            lastNameLabel.TabIndex = 5;
+            lastNameLabel.Text = "Apellido";
             // 
-            // textBox3
+            // nameLabel
             // 
-            textBox3.Location = new Point(160, 183);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(185, 26);
-            textBox3.TabIndex = 10;
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(160, 97);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(65, 19);
+            nameLabel.TabIndex = 4;
+            nameLabel.Text = "Nombre";
             // 
-            // numberPhoneTextBox
+            // duiLabel
             // 
-            numberPhoneTextBox.Location = new Point(160, 250);
-            numberPhoneTextBox.Name = "numberPhoneTextBox";
-            numberPhoneTextBox.Size = new Size(185, 26);
-            numberPhoneTextBox.TabIndex = 11;
+            duiLabel.AutoSize = true;
+            duiLabel.Location = new Point(160, 34);
+            duiLabel.Name = "duiLabel";
+            duiLabel.Size = new Size(33, 19);
+            duiLabel.TabIndex = 3;
+            duiLabel.Text = "DUI";
             // 
-            // emailTextBox
+            // deleteButton
             // 
-            emailTextBox.Location = new Point(160, 317);
-            emailTextBox.Name = "emailTextBox";
-            emailTextBox.Size = new Size(185, 26);
-            emailTextBox.TabIndex = 12;
+            deleteButton.Location = new Point(335, 388);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(87, 31);
+            deleteButton.TabIndex = 2;
+            deleteButton.Text = "Eliminar";
+            deleteButton.UseVisualStyleBackColor = true;
             // 
-            // registerMembershipGroupBox
+            // editButton
             // 
-            registerMembershipGroupBox.Controls.Add(addMemberButton);
-            registerMembershipGroupBox.Controls.Add(priceMembershipComboBox);
-            registerMembershipGroupBox.Controls.Add(typeMembershipComboBox);
-            registerMembershipGroupBox.Controls.Add(priceMembershipLabel);
-            registerMembershipGroupBox.Controls.Add(typeMembershipLabel);
-            registerMembershipGroupBox.Location = new Point(40, 29);
-            registerMembershipGroupBox.Name = "registerMembershipGroupBox";
-            registerMembershipGroupBox.Size = new Size(222, 428);
-            registerMembershipGroupBox.TabIndex = 0;
-            registerMembershipGroupBox.TabStop = false;
-            registerMembershipGroupBox.Text = "REGISTRO DE MEMBRESIAS";
+            editButton.Location = new Point(217, 388);
+            editButton.Name = "editButton";
+            editButton.Size = new Size(87, 31);
+            editButton.TabIndex = 1;
+            editButton.Text = "Editar";
+            editButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteButtom
+            // 
+            deleteButtom.Location = new Point(94, 388);
+            deleteButtom.Name = "deleteButtom";
+            deleteButtom.Size = new Size(82, 31);
+            deleteButtom.TabIndex = 0;
+            deleteButtom.Text = "Eliminar";
+            deleteButtom.UseVisualStyleBackColor = true;
+            // 
+            // membershipTab
+            // 
+            membershipTab.Controls.Add(membershipManagerGroupBox);
+            membershipTab.Controls.Add(registerMembershipGroupBox);
+            membershipTab.Location = new Point(4, 28);
+            membershipTab.Name = "membershipTab";
+            membershipTab.Padding = new Padding(3);
+            membershipTab.Size = new Size(568, 515);
+            membershipTab.TabIndex = 1;
+            membershipTab.Text = "Membresias";
+            membershipTab.UseVisualStyleBackColor = true;
             // 
             // membershipManagerGroupBox
             // 
@@ -316,32 +279,29 @@
             membershipManagerGroupBox.TabStop = false;
             membershipManagerGroupBox.Text = "GESTION DE MEMBRESIAS";
             // 
-            // typeMembershipLabel
+            // membershipStateButton
             // 
-            typeMembershipLabel.AutoSize = true;
-            typeMembershipLabel.Location = new Point(24, 61);
-            typeMembershipLabel.Name = "typeMembershipLabel";
-            typeMembershipLabel.Size = new Size(139, 19);
-            typeMembershipLabel.TabIndex = 0;
-            typeMembershipLabel.Text = "Tipo de membresia";
+            membershipStateButton.Location = new Point(68, 329);
+            membershipStateButton.Name = "membershipStateButton";
+            membershipStateButton.Size = new Size(92, 31);
+            membershipStateButton.TabIndex = 4;
+            membershipStateButton.Text = "Editar";
+            membershipStateButton.UseVisualStyleBackColor = true;
             // 
-            // priceMembershipLabel
+            // membershipStateComboBox
             // 
-            priceMembershipLabel.AutoSize = true;
-            priceMembershipLabel.Location = new Point(24, 189);
-            priceMembershipLabel.Name = "priceMembershipLabel";
-            priceMembershipLabel.Size = new Size(152, 19);
-            priceMembershipLabel.TabIndex = 1;
-            priceMembershipLabel.Text = "Precio de membresia";
+            membershipStateComboBox.FormattingEnabled = true;
+            membershipStateComboBox.Location = new Point(36, 257);
+            membershipStateComboBox.Name = "membershipStateComboBox";
+            membershipStateComboBox.Size = new Size(167, 27);
+            membershipStateComboBox.TabIndex = 3;
             // 
-            // duiMemberLabel
+            // duiMemberTextBox
             // 
-            duiMemberLabel.AutoSize = true;
-            duiMemberLabel.Location = new Point(36, 64);
-            duiMemberLabel.Name = "duiMemberLabel";
-            duiMemberLabel.Size = new Size(33, 19);
-            duiMemberLabel.TabIndex = 0;
-            duiMemberLabel.Text = "DUI";
+            duiMemberTextBox.Location = new Point(36, 119);
+            duiMemberTextBox.Name = "duiMemberTextBox";
+            duiMemberTextBox.Size = new Size(167, 26);
+            duiMemberTextBox.TabIndex = 2;
             // 
             // membershipStateLabel
             // 
@@ -352,36 +312,28 @@
             membershipStateLabel.TabIndex = 1;
             membershipStateLabel.Text = "Estado de membresia";
             // 
-            // duiMemberTextBox
+            // duiMemberLabel
             // 
-            duiMemberTextBox.Location = new Point(36, 119);
-            duiMemberTextBox.Name = "duiMemberTextBox";
-            duiMemberTextBox.Size = new Size(167, 26);
-            duiMemberTextBox.TabIndex = 2;
+            duiMemberLabel.AutoSize = true;
+            duiMemberLabel.Location = new Point(36, 64);
+            duiMemberLabel.Name = "duiMemberLabel";
+            duiMemberLabel.Size = new Size(33, 19);
+            duiMemberLabel.TabIndex = 0;
+            duiMemberLabel.Text = "DUI";
             // 
-            // typeMembershipComboBox
+            // registerMembershipGroupBox
             // 
-            typeMembershipComboBox.FormattingEnabled = true;
-            typeMembershipComboBox.Location = new Point(24, 115);
-            typeMembershipComboBox.Name = "typeMembershipComboBox";
-            typeMembershipComboBox.Size = new Size(171, 27);
-            typeMembershipComboBox.TabIndex = 2;
-            // 
-            // priceMembershipComboBox
-            // 
-            priceMembershipComboBox.FormattingEnabled = true;
-            priceMembershipComboBox.Location = new Point(24, 254);
-            priceMembershipComboBox.Name = "priceMembershipComboBox";
-            priceMembershipComboBox.Size = new Size(171, 27);
-            priceMembershipComboBox.TabIndex = 3;
-            // 
-            // membershipStateComboBox
-            // 
-            membershipStateComboBox.FormattingEnabled = true;
-            membershipStateComboBox.Location = new Point(36, 257);
-            membershipStateComboBox.Name = "membershipStateComboBox";
-            membershipStateComboBox.Size = new Size(167, 27);
-            membershipStateComboBox.TabIndex = 3;
+            registerMembershipGroupBox.Controls.Add(addMemberButton);
+            registerMembershipGroupBox.Controls.Add(priceMembershipComboBox);
+            registerMembershipGroupBox.Controls.Add(typeMembershipComboBox);
+            registerMembershipGroupBox.Controls.Add(priceMembershipLabel);
+            registerMembershipGroupBox.Controls.Add(typeMembershipLabel);
+            registerMembershipGroupBox.Location = new Point(40, 29);
+            registerMembershipGroupBox.Name = "registerMembershipGroupBox";
+            registerMembershipGroupBox.Size = new Size(222, 428);
+            registerMembershipGroupBox.TabIndex = 0;
+            registerMembershipGroupBox.TabStop = false;
+            registerMembershipGroupBox.Text = "REGISTRO DE MEMBRESIAS";
             // 
             // addMemberButton
             // 
@@ -392,28 +344,51 @@
             addMemberButton.Text = "Agregar";
             addMemberButton.UseVisualStyleBackColor = true;
             // 
-            // membershipStateButton
+            // priceMembershipComboBox
             // 
-            membershipStateButton.Location = new Point(68, 329);
-            membershipStateButton.Name = "membershipStateButton";
-            membershipStateButton.Size = new Size(92, 31);
-            membershipStateButton.TabIndex = 4;
-            membershipStateButton.Text = "Editar";
-            membershipStateButton.UseVisualStyleBackColor = true;
+            priceMembershipComboBox.FormattingEnabled = true;
+            priceMembershipComboBox.Location = new Point(24, 254);
+            priceMembershipComboBox.Name = "priceMembershipComboBox";
+            priceMembershipComboBox.Size = new Size(171, 27);
+            priceMembershipComboBox.TabIndex = 3;
             // 
-            // classGroupBox
+            // typeMembershipComboBox
             // 
-            classGroupBox.Controls.Add(addTypeExcerciseButton);
-            classGroupBox.Controls.Add(roomComboBox);
-            classGroupBox.Controls.Add(typeExcerciseComboBox);
-            classGroupBox.Controls.Add(roomLabel);
-            classGroupBox.Controls.Add(excerciseTypeLabel);
-            classGroupBox.Location = new Point(30, 53);
-            classGroupBox.Name = "classGroupBox";
-            classGroupBox.Size = new Size(197, 346);
-            classGroupBox.TabIndex = 0;
-            classGroupBox.TabStop = false;
-            classGroupBox.Text = "CLASE";
+            typeMembershipComboBox.FormattingEnabled = true;
+            typeMembershipComboBox.Location = new Point(24, 115);
+            typeMembershipComboBox.Name = "typeMembershipComboBox";
+            typeMembershipComboBox.Size = new Size(171, 27);
+            typeMembershipComboBox.TabIndex = 2;
+            // 
+            // priceMembershipLabel
+            // 
+            priceMembershipLabel.AutoSize = true;
+            priceMembershipLabel.Location = new Point(24, 189);
+            priceMembershipLabel.Name = "priceMembershipLabel";
+            priceMembershipLabel.Size = new Size(152, 19);
+            priceMembershipLabel.TabIndex = 1;
+            priceMembershipLabel.Text = "Precio de membresia";
+            // 
+            // typeMembershipLabel
+            // 
+            typeMembershipLabel.AutoSize = true;
+            typeMembershipLabel.Location = new Point(24, 61);
+            typeMembershipLabel.Name = "typeMembershipLabel";
+            typeMembershipLabel.Size = new Size(139, 19);
+            typeMembershipLabel.TabIndex = 0;
+            typeMembershipLabel.Text = "Tipo de membresia";
+            // 
+            // sesionTab
+            // 
+            sesionTab.Controls.Add(instructorGroupBox);
+            sesionTab.Controls.Add(classGroupBox);
+            sesionTab.Location = new Point(4, 28);
+            sesionTab.Name = "sesionTab";
+            sesionTab.Padding = new Padding(3);
+            sesionTab.Size = new Size(568, 515);
+            sesionTab.TabIndex = 2;
+            sesionTab.Text = "Sesión";
+            sesionTab.UseVisualStyleBackColor = true;
             // 
             // instructorGroupBox
             // 
@@ -437,68 +412,57 @@
             instructorGroupBox.TabStop = false;
             instructorGroupBox.Text = "INSTRUCTOR";
             // 
-            // excerciseTypeLabel
+            // addInstructorButton
             // 
-            excerciseTypeLabel.AutoSize = true;
-            excerciseTypeLabel.Location = new Point(15, 49);
-            excerciseTypeLabel.Name = "excerciseTypeLabel";
-            excerciseTypeLabel.Size = new Size(121, 19);
-            excerciseTypeLabel.TabIndex = 0;
-            excerciseTypeLabel.Text = "Tipo de ejercicio";
+            addInstructorButton.Location = new Point(84, 396);
+            addInstructorButton.Name = "addInstructorButton";
+            addInstructorButton.Size = new Size(81, 32);
+            addInstructorButton.TabIndex = 12;
+            addInstructorButton.Text = "Agregar";
+            addInstructorButton.UseVisualStyleBackColor = true;
             // 
-            // roomLabel
+            // instructorPaymentTextBox
             // 
-            roomLabel.AutoSize = true;
-            roomLabel.Location = new Point(15, 149);
-            roomLabel.Name = "roomLabel";
-            roomLabel.Size = new Size(43, 19);
-            roomLabel.TabIndex = 1;
-            roomLabel.Text = "Salas";
+            instructorPaymentTextBox.Location = new Point(33, 297);
+            instructorPaymentTextBox.Name = "instructorPaymentTextBox";
+            instructorPaymentTextBox.Size = new Size(185, 26);
+            instructorPaymentTextBox.TabIndex = 11;
             // 
-            // instructorNameLabel
+            // instructorEmailTextBox
             // 
-            instructorNameLabel.AutoSize = true;
-            instructorNameLabel.Location = new Point(33, 44);
-            instructorNameLabel.Name = "instructorNameLabel";
-            instructorNameLabel.Size = new Size(65, 19);
-            instructorNameLabel.TabIndex = 0;
-            instructorNameLabel.Text = "Nombre";
+            instructorEmailTextBox.Location = new Point(33, 243);
+            instructorEmailTextBox.Name = "instructorEmailTextBox";
+            instructorEmailTextBox.Size = new Size(185, 26);
+            instructorEmailTextBox.TabIndex = 10;
             // 
-            // instructorLastNameLabel
+            // instructorPhoneNumberTextBox
             // 
-            instructorLastNameLabel.AutoSize = true;
-            instructorLastNameLabel.Location = new Point(33, 103);
-            instructorLastNameLabel.Name = "instructorLastNameLabel";
-            instructorLastNameLabel.Size = new Size(66, 19);
-            instructorLastNameLabel.TabIndex = 1;
-            instructorLastNameLabel.Text = "Apellido";
+            instructorPhoneNumberTextBox.Location = new Point(33, 187);
+            instructorPhoneNumberTextBox.Name = "instructorPhoneNumberTextBox";
+            instructorPhoneNumberTextBox.Size = new Size(185, 26);
+            instructorPhoneNumberTextBox.TabIndex = 9;
             // 
-            // instructorPhoneNumberLabel
+            // instructorLastNameTextBox
             // 
-            instructorPhoneNumberLabel.AutoSize = true;
-            instructorPhoneNumberLabel.Location = new Point(33, 165);
-            instructorPhoneNumberLabel.Name = "instructorPhoneNumberLabel";
-            instructorPhoneNumberLabel.Size = new Size(67, 19);
-            instructorPhoneNumberLabel.TabIndex = 2;
-            instructorPhoneNumberLabel.Text = "Teléfono";
+            instructorLastNameTextBox.Location = new Point(33, 125);
+            instructorLastNameTextBox.Name = "instructorLastNameTextBox";
+            instructorLastNameTextBox.Size = new Size(185, 26);
+            instructorLastNameTextBox.TabIndex = 8;
             // 
-            // instructorEmailLabel
+            // instructorNameTextBox
             // 
-            instructorEmailLabel.AutoSize = true;
-            instructorEmailLabel.Location = new Point(33, 221);
-            instructorEmailLabel.Name = "instructorEmailLabel";
-            instructorEmailLabel.Size = new Size(56, 19);
-            instructorEmailLabel.TabIndex = 3;
-            instructorEmailLabel.Text = "Correo";
+            instructorNameTextBox.Location = new Point(33, 66);
+            instructorNameTextBox.Name = "instructorNameTextBox";
+            instructorNameTextBox.Size = new Size(185, 26);
+            instructorNameTextBox.TabIndex = 7;
             // 
-            // instructorPaymentLabel
+            // instructorStateComboBox
             // 
-            instructorPaymentLabel.AutoSize = true;
-            instructorPaymentLabel.Location = new Point(33, 275);
-            instructorPaymentLabel.Name = "instructorPaymentLabel";
-            instructorPaymentLabel.Size = new Size(55, 19);
-            instructorPaymentLabel.TabIndex = 4;
-            instructorPaymentLabel.Text = "Sueldo";
+            instructorStateComboBox.FormattingEnabled = true;
+            instructorStateComboBox.Location = new Point(33, 353);
+            instructorStateComboBox.Name = "instructorStateComboBox";
+            instructorStateComboBox.Size = new Size(185, 27);
+            instructorStateComboBox.TabIndex = 6;
             // 
             // instructorStateLabel
             // 
@@ -509,64 +473,64 @@
             instructorStateLabel.TabIndex = 5;
             instructorStateLabel.Text = "Estado";
             // 
-            // typeExcerciseComboBox
+            // instructorPaymentLabel
             // 
-            typeExcerciseComboBox.FormattingEnabled = true;
-            typeExcerciseComboBox.Location = new Point(15, 100);
-            typeExcerciseComboBox.Name = "typeExcerciseComboBox";
-            typeExcerciseComboBox.Size = new Size(158, 27);
-            typeExcerciseComboBox.TabIndex = 2;
+            instructorPaymentLabel.AutoSize = true;
+            instructorPaymentLabel.Location = new Point(33, 275);
+            instructorPaymentLabel.Name = "instructorPaymentLabel";
+            instructorPaymentLabel.Size = new Size(55, 19);
+            instructorPaymentLabel.TabIndex = 4;
+            instructorPaymentLabel.Text = "Sueldo";
             // 
-            // roomComboBox
+            // instructorEmailLabel
             // 
-            roomComboBox.FormattingEnabled = true;
-            roomComboBox.Location = new Point(15, 197);
-            roomComboBox.Name = "roomComboBox";
-            roomComboBox.Size = new Size(158, 27);
-            roomComboBox.TabIndex = 3;
+            instructorEmailLabel.AutoSize = true;
+            instructorEmailLabel.Location = new Point(33, 221);
+            instructorEmailLabel.Name = "instructorEmailLabel";
+            instructorEmailLabel.Size = new Size(56, 19);
+            instructorEmailLabel.TabIndex = 3;
+            instructorEmailLabel.Text = "Correo";
             // 
-            // instructorStateComboBox
+            // instructorPhoneNumberLabel
             // 
-            instructorStateComboBox.FormattingEnabled = true;
-            instructorStateComboBox.Location = new Point(33, 353);
-            instructorStateComboBox.Name = "instructorStateComboBox";
-            instructorStateComboBox.Size = new Size(185, 27);
-            instructorStateComboBox.TabIndex = 6;
+            instructorPhoneNumberLabel.AutoSize = true;
+            instructorPhoneNumberLabel.Location = new Point(33, 165);
+            instructorPhoneNumberLabel.Name = "instructorPhoneNumberLabel";
+            instructorPhoneNumberLabel.Size = new Size(67, 19);
+            instructorPhoneNumberLabel.TabIndex = 2;
+            instructorPhoneNumberLabel.Text = "Teléfono";
             // 
-            // instructorNameTextBox
+            // instructorLastNameLabel
             // 
-            instructorNameTextBox.Location = new Point(33, 66);
-            instructorNameTextBox.Name = "instructorNameTextBox";
-            instructorNameTextBox.Size = new Size(185, 26);
-            instructorNameTextBox.TabIndex = 7;
+            instructorLastNameLabel.AutoSize = true;
+            instructorLastNameLabel.Location = new Point(33, 103);
+            instructorLastNameLabel.Name = "instructorLastNameLabel";
+            instructorLastNameLabel.Size = new Size(66, 19);
+            instructorLastNameLabel.TabIndex = 1;
+            instructorLastNameLabel.Text = "Apellido";
             // 
-            // instructorLastNameTextBox
+            // instructorNameLabel
             // 
-            instructorLastNameTextBox.Location = new Point(33, 125);
-            instructorLastNameTextBox.Name = "instructorLastNameTextBox";
-            instructorLastNameTextBox.Size = new Size(185, 26);
-            instructorLastNameTextBox.TabIndex = 8;
+            instructorNameLabel.AutoSize = true;
+            instructorNameLabel.Location = new Point(33, 44);
+            instructorNameLabel.Name = "instructorNameLabel";
+            instructorNameLabel.Size = new Size(65, 19);
+            instructorNameLabel.TabIndex = 0;
+            instructorNameLabel.Text = "Nombre";
             // 
-            // instructorPhoneNumberTextBox
+            // classGroupBox
             // 
-            instructorPhoneNumberTextBox.Location = new Point(33, 187);
-            instructorPhoneNumberTextBox.Name = "instructorPhoneNumberTextBox";
-            instructorPhoneNumberTextBox.Size = new Size(185, 26);
-            instructorPhoneNumberTextBox.TabIndex = 9;
-            // 
-            // instructorEmailTextBox
-            // 
-            instructorEmailTextBox.Location = new Point(33, 243);
-            instructorEmailTextBox.Name = "instructorEmailTextBox";
-            instructorEmailTextBox.Size = new Size(185, 26);
-            instructorEmailTextBox.TabIndex = 10;
-            // 
-            // instructorPaymentTextBox
-            // 
-            instructorPaymentTextBox.Location = new Point(33, 297);
-            instructorPaymentTextBox.Name = "instructorPaymentTextBox";
-            instructorPaymentTextBox.Size = new Size(185, 26);
-            instructorPaymentTextBox.TabIndex = 11;
+            classGroupBox.Controls.Add(addTypeExcerciseButton);
+            classGroupBox.Controls.Add(roomComboBox);
+            classGroupBox.Controls.Add(typeExcerciseComboBox);
+            classGroupBox.Controls.Add(roomLabel);
+            classGroupBox.Controls.Add(excerciseTypeLabel);
+            classGroupBox.Location = new Point(30, 53);
+            classGroupBox.Name = "classGroupBox";
+            classGroupBox.Size = new Size(197, 346);
+            classGroupBox.TabIndex = 0;
+            classGroupBox.TabStop = false;
+            classGroupBox.Text = "CLASE";
             // 
             // addTypeExcerciseButton
             // 
@@ -577,14 +541,51 @@
             addTypeExcerciseButton.Text = "Agregar";
             addTypeExcerciseButton.UseVisualStyleBackColor = true;
             // 
-            // addInstructorButton
+            // roomComboBox
             // 
-            addInstructorButton.Location = new Point(84, 396);
-            addInstructorButton.Name = "addInstructorButton";
-            addInstructorButton.Size = new Size(81, 32);
-            addInstructorButton.TabIndex = 12;
-            addInstructorButton.Text = "Agregar";
-            addInstructorButton.UseVisualStyleBackColor = true;
+            roomComboBox.FormattingEnabled = true;
+            roomComboBox.Location = new Point(15, 197);
+            roomComboBox.Name = "roomComboBox";
+            roomComboBox.Size = new Size(158, 27);
+            roomComboBox.TabIndex = 3;
+            // 
+            // typeExcerciseComboBox
+            // 
+            typeExcerciseComboBox.FormattingEnabled = true;
+            typeExcerciseComboBox.Location = new Point(15, 100);
+            typeExcerciseComboBox.Name = "typeExcerciseComboBox";
+            typeExcerciseComboBox.Size = new Size(158, 27);
+            typeExcerciseComboBox.TabIndex = 2;
+            // 
+            // roomLabel
+            // 
+            roomLabel.AutoSize = true;
+            roomLabel.Location = new Point(15, 149);
+            roomLabel.Name = "roomLabel";
+            roomLabel.Size = new Size(43, 19);
+            roomLabel.TabIndex = 1;
+            roomLabel.Text = "Salas";
+            // 
+            // excerciseTypeLabel
+            // 
+            excerciseTypeLabel.AutoSize = true;
+            excerciseTypeLabel.Location = new Point(15, 49);
+            excerciseTypeLabel.Name = "excerciseTypeLabel";
+            excerciseTypeLabel.Size = new Size(121, 19);
+            excerciseTypeLabel.TabIndex = 0;
+            excerciseTypeLabel.Text = "Tipo de ejercicio";
+            // 
+            // asistenceTab
+            // 
+            asistenceTab.Controls.Add(assistenceGroupBox);
+            asistenceTab.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            asistenceTab.Location = new Point(4, 28);
+            asistenceTab.Name = "asistenceTab";
+            asistenceTab.Padding = new Padding(3);
+            asistenceTab.Size = new Size(568, 515);
+            asistenceTab.TabIndex = 3;
+            asistenceTab.Text = "Asistencia";
+            asistenceTab.UseVisualStyleBackColor = true;
             // 
             // assistenceGroupBox
             // 
@@ -600,30 +601,14 @@
             assistenceGroupBox.TabStop = false;
             assistenceGroupBox.Text = "Asistencia";
             // 
-            // assistenceDateLabel
+            // addAssistenceButton
             // 
-            assistenceDateLabel.AutoSize = true;
-            assistenceDateLabel.Location = new Point(94, 47);
-            assistenceDateLabel.Name = "assistenceDateLabel";
-            assistenceDateLabel.Size = new Size(168, 18);
-            assistenceDateLabel.TabIndex = 0;
-            assistenceDateLabel.Text = "Fecha de asistencia";
-            // 
-            // assistenceStateLabel
-            // 
-            assistenceStateLabel.AutoSize = true;
-            assistenceStateLabel.Location = new Point(81, 142);
-            assistenceStateLabel.Name = "assistenceStateLabel";
-            assistenceStateLabel.Size = new Size(192, 18);
-            assistenceStateLabel.TabIndex = 1;
-            assistenceStateLabel.Text = "Estado de la asistencia";
-            // 
-            // assistenceDateTimePicker
-            // 
-            assistenceDateTimePicker.Location = new Point(59, 88);
-            assistenceDateTimePicker.Name = "assistenceDateTimePicker";
-            assistenceDateTimePicker.Size = new Size(239, 26);
-            assistenceDateTimePicker.TabIndex = 2;
+            addAssistenceButton.Location = new Point(133, 344);
+            addAssistenceButton.Name = "addAssistenceButton";
+            addAssistenceButton.Size = new Size(88, 31);
+            addAssistenceButton.TabIndex = 4;
+            addAssistenceButton.Text = "Agregar";
+            addAssistenceButton.UseVisualStyleBackColor = true;
             // 
             // assistenceStateCheckedListBox
             // 
@@ -634,14 +619,30 @@
             assistenceStateCheckedListBox.Size = new Size(168, 130);
             assistenceStateCheckedListBox.TabIndex = 3;
             // 
-            // addAssistenceButton
+            // assistenceDateTimePicker
             // 
-            addAssistenceButton.Location = new Point(133, 344);
-            addAssistenceButton.Name = "addAssistenceButton";
-            addAssistenceButton.Size = new Size(88, 31);
-            addAssistenceButton.TabIndex = 4;
-            addAssistenceButton.Text = "Agregar";
-            addAssistenceButton.UseVisualStyleBackColor = true;
+            assistenceDateTimePicker.Location = new Point(59, 88);
+            assistenceDateTimePicker.Name = "assistenceDateTimePicker";
+            assistenceDateTimePicker.Size = new Size(239, 26);
+            assistenceDateTimePicker.TabIndex = 2;
+            // 
+            // assistenceStateLabel
+            // 
+            assistenceStateLabel.AutoSize = true;
+            assistenceStateLabel.Location = new Point(81, 142);
+            assistenceStateLabel.Name = "assistenceStateLabel";
+            assistenceStateLabel.Size = new Size(192, 18);
+            assistenceStateLabel.TabIndex = 1;
+            assistenceStateLabel.Text = "Estado de la asistencia";
+            // 
+            // assistenceDateLabel
+            // 
+            assistenceDateLabel.AutoSize = true;
+            assistenceDateLabel.Location = new Point(94, 47);
+            assistenceDateLabel.Name = "assistenceDateLabel";
+            assistenceDateLabel.Size = new Size(168, 18);
+            assistenceDateLabel.TabIndex = 0;
+            assistenceDateLabel.Text = "Fecha de asistencia";
             // 
             // DiseñoGimnasio
             // 
@@ -649,23 +650,24 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 644);
             Controls.Add(gymAdminTab);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "DiseñoGimnasio";
             Text = "DiseñoGimnasio";
             gymAdminTab.ResumeLayout(false);
             membersTab.ResumeLayout(false);
-            membershipTab.ResumeLayout(false);
-            sesionTab.ResumeLayout(false);
-            asistenceTab.ResumeLayout(false);
             membersBox.ResumeLayout(false);
             membersBox.PerformLayout();
-            registerMembershipGroupBox.ResumeLayout(false);
-            registerMembershipGroupBox.PerformLayout();
+            membershipTab.ResumeLayout(false);
             membershipManagerGroupBox.ResumeLayout(false);
             membershipManagerGroupBox.PerformLayout();
-            classGroupBox.ResumeLayout(false);
-            classGroupBox.PerformLayout();
+            registerMembershipGroupBox.ResumeLayout(false);
+            registerMembershipGroupBox.PerformLayout();
+            sesionTab.ResumeLayout(false);
             instructorGroupBox.ResumeLayout(false);
             instructorGroupBox.PerformLayout();
+            classGroupBox.ResumeLayout(false);
+            classGroupBox.PerformLayout();
+            asistenceTab.ResumeLayout(false);
             assistenceGroupBox.ResumeLayout(false);
             assistenceGroupBox.PerformLayout();
             ResumeLayout(false);
